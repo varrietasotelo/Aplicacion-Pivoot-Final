@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Categorias</title>
+    <link rel="stylesheet" href="css/categorias.css">
+
+
+</head>
+
+
+
+<body>
+    <div class="padre">
+        <nav>
+            <ul>
+                <li>
+                    <img src="Imagenes/menu.png" alt="">
+                    <h2>Pivoot</h2>
+                </li>
+
+            </ul>
+        </nav>
+    </div>
+
+    <div id="categoria">
+        <h1>Gestionar Categorias</h1>
+        
+    </div>
+
+    <div class="container1">
+
+
+        <div class="caja1">
+            <img src="Imagenes/Captura.PNG" alt="">
+            <section>
+            <h1>PRE MINI-MINI</h1><br>
+            <p>Edades: 7 a 12</p><br>
+            <h3>Ver</h3>
+            </section>
+        </div>
+        <div>
+            <div class="caja2">
+                <img src="Imagenes/Captura.PNG" alt="">
+                <section>
+                    <h1>CATEGORIA INFANTIL</h1><br>
+                    <p>Edades: 13 a 14</p><br>
+                    <h3>Ver</h3>
+                </section>
+            </div>
+        </div>
+        <div class="caja3">
+            <img src="Imagenes/Captura.PNG" alt="">
+            <section>
+                <h1>CATEGORIA JUNIOR</h1><br>
+                <p>Edades: 15 a 17</p><br>
+                <h3>Ver</h3>
+            </section>
+        </div>
+    </div>
+
+
+    <div id="sidemenu" class="menu'collapsed">
+        <!--HEADER-->
+        <div id="header">
+            <div><img src="Imagenes/favicon.png" alt=""></div>
+            <div id="menu-btn">
+                <div id="btn-hamburger"></div>
+                <div id="btn-hamburger"></div>
+                <div id="btn-hamburger"></div>
+            </div>
+        </div>
+
+        <!--ITEMS-->
+
+        <div id="menu-items">
+            <div class="item">
+                <a href="">
+                    <div class="icon"><img src="Imagenes/entrenador.png" alt=""></div>
+                    <div class="title">Inicio</div>
+                </a>
+            </div>
+        </div>
+
+        <div id="menu-items">
+            <div class="item">
+                <a href="">
+                    <div class="icon"> <img src="Imagenes/entrenamiento.png" alt=""> </div>
+                    <div class="title">Jugadores</div>
+                </a>
+            </div>
+        </div>
+
+        <div id="menu-items">
+            <div class="item">
+                <a href="">
+                    <div class="icon"> <img src="Imagenes/entrenamiento.png" alt=""> </div>
+                    <div class="title">Entrenador</div>
+                </a>
+            </div>
+        </div>
+        <div id="menu-items">
+            <div class="item">
+                <a href="">
+                    <div class="icon"> <img src="Imagenes/mantenimiento.png" alt=""> </div>
+                    <div class="title">Categorias</div>
+                </a>
+            </div>
+        </div>
+
+        <div id="menu-items">
+            <div class="item">
+                <a href="">
+                    <div class="icon"> <img src="Imagenes/entrenador.png" alt=""> </div>
+                    <div class="title">Entrenamiento</div>
+                </a>
+            </div>
+        </div>
+
+        <div id="menu-items">
+            <div class="item">
+                <a href="">
+                    <div class="icon"> <img src="Imagenes/hamburger.png" alt=""> </div>
+                    <div class="title">Seguimientos</div>
+                </a>
+            </div>
+        </div>
+
+        <div id="menu-items">
+            <div class="item">
+                <a href="">
+                    <div class="icon"> <img src="Imagenes/notas.png" alt=""> </div>
+                    <div class="title">Acudientes</div>
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="main-container">
+
+        HOLA MUNDOOOO PIVOOT
+    </div>
+
+    <script>
+        const btn = document.querySelector('#menu-btn')
+        const menu = document.querySelector('#sidemenu')
+        btn.addEventListener('click', e => {
+            menu.classList.toggle("menu-expanded");
+            menu.classList.toggle("menu-collapsed");
+
+            document.querySelector('body').classList.toggle('body-expanded');
+
+        })
+    </script>
+
+</body>
+
+</html>
