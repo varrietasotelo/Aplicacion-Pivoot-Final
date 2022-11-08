@@ -1,0 +1,258 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: auto;
+    height: auto;
+    z-index: -5;
+}
+
+header {
+    width: 100%;
+    height: 90px;
+    position: fixed;
+}
+
+header nav a img {
+    width: 200px;
+    height: 65px;
+    padding-left: 50px;
+    padding-top: 5px;
+  
+}
+
+
+
+
+nav ul{
+    float: right;
+    display: flex;
+}
+
+nav ul li {
+
+    float: right;
+    display: flex;
+    position: relative;
+}
+
+nav ul li a {
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    color: black;
+    font-size: 20px;
+    padding-right: 80px;
+    display: block;
+    padding-top: 30px;
+
+}
+header div {
+    padding: 20px;
+    z-index: -4;
+}
+
+nav ul li a button{
+    background-color: rgb(89, 82, 82);
+    width: 130px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+    padding-right: 60px;
+    color: white;
+    padding: 5px;
+    margin-top: -5px;
+   
+}
+
+div .pro{
+    width: 25%;
+}
+.entero {
+    width: 100%;
+    height: auto;
+
+}
+.fondo{
+    z-index: -6;
+    position: absolute;
+    width: auto;
+    height: auto;
+}
+.pro{
+    z-index: -5;
+    float: right;
+    margin-right: 300px;
+    position: relative;
+    top: 233px;
+    width: 1191px;
+    height: 622px;
+}
+.info{
+    width: 35%;
+    height: 500px;
+    padding: 10px;
+    z-index: -5;
+    position: relative;
+    top: 300px;
+    margin-left: 90px;
+}
+
+.titulo{
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+    font-size: 50px;
+    padding-bottom: 10px;
+}
+.escr{
+    padding:10px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.bajo{
+    position:relative;
+    width: 100%;
+    height: 500px;
+    top: 300px;
+    background-color: white;
+}
+
+.modulos{
+    width: 500px;
+    display: flex;
+    justify-content: center;
+    margin-left: 500px;
+    margin-top: 70px;
+}
+
+
+h1{
+    font-size:40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #7F8C8D; 
+    text-align: center;
+}
+
+.container{
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.caja1{
+    width: 20%;
+    height: 350px;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px #7F8C8D;
+
+}
+.caja2{
+    width: 20%;
+    height: 350px;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px #7F8C8D;
+}
+.caja3{
+    width: 20%;
+    height: 350px;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px #7F8C8D;
+}
+.caja4{
+    width: 20%;
+    height: 350px;
+    justify-content: space-between;
+    background-color: white;
+    box-shadow: 5px 5px 5px 5px #7F8C8D;
+}
+
+.caja1 img{
+    padding-top: 20px;
+    display: flex;
+    margin: 0px auto;
+    width: 100px;
+    height: 100px;
+}
+
+.caja2 img{
+    padding-top: 20px;
+    display: flex;
+    margin: 0px auto;
+    width: 100px;
+    height: 100px;
+}
+.caja3 img{
+    padding-top: 20px;
+    display: flex;
+    margin: 0px auto;
+    width: 100px;
+    height: 100px;
+}
+.caja4 img{
+    padding-top: 20px;
+    display: flex;
+    margin: 0px auto;
+    width: 100px;
+    height: 100px;
+}
+.caja1 p{
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.caja2 p{
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.caja3 p{
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.caja4 p{
+    padding-top: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+
+.caja1 h2{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.caja2 h2{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.caja3 h2{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.caja4 h2{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}

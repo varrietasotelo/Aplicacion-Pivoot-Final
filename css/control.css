@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+}
+
+:root {
+    --width: auto;
+    --padding: 10px;
+    --bgcolor: white;
+    --hovercolor: rgb(224, 221, 221);
+    --width-collapsed: 50px;
+}
+
+body {
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    margin-left: var(--width-collapsed);
+}
+
+.body-expanded {
+    margin-left: var(--width);
+}
+
+#main-container {
+    color: black;
+}
+
+#sidemenu {
+    background-color: var(--bgcolor);
+    color: black;
+    position: fixed;
+    height: 100%;
+    left: 0;
+    top: 0;
+}
+
+#sidemenu #header img {
+    width: auto;
+    height: 80px;
+    padding: 10px;
+}
+
+#sidemenu a {
+    color: black;
+    text-decoration: none;
+}
+
+
+/*
+
+HEADER ESTA VAINA ESTA MUY DIFICIL
+
+*/
+
+.padre {
+    width: auto;
+    height: 100px;
+    margin-top: 0;
+    margin-left: 330px;
+    background-color: white;
+    border-bottom-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+div nav ul li img {
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    padding-top: 30px;
+}
+
+div nav ul li h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    display: inline-block;
+    padding-top: 30px;
+    padding-left: 10px;
+}
+
+div nav ul li {
+    list-style: none;
+    text-decoration: none;
+}
+
+#sidemenu #header #title {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#sidemenu #header #title,
+#sidemenu #header #menu-btn {
+    vertical-align: middle;
+}
+
+#sidemenu #header #menu-btn {
+    display: inline-block;
+}
+
+#sidemenu #header #menu-btn {
+    cursor: pointer;
+    padding: 10px;
+    width: var(--width-collapsed);
+    box-sizing: border-box;
+}
+
+#sidemenu #header #menu-btn:hover {
+    background-color: var(--hovercolor);
+}
+
+#sidemenu #header #menu-btn .btn-hamburger {
+    background-color: orange;
+    width: 100%;
+    height: 2px;
+    margin: 5px 0;
+}
+
+
+/*
+ITEMS
+
+*/
+
+#sidemenu #menu-items {
+    overflow: hidden;
+}
+
+#sidemenu #menu-items .item {
+    width: var(--width);
+}
+
+#sidemenu #menu-items .item .icon {
+    display: inline-block;
+}
+
+#sidemenu #menu-items .item .icon,
+#sidemenu #menu-items .item .title {
+    font-size: 14px;
+    vertical-align: middle;
+    overflow: hidden;
+    display: inline-block;
+}
+
+#sidemenu #menu-items .item a {
+    display: block;
+}
+
+#sidemenu #menu-items .item a:hover {
+    background-color: var(--hovercolor);
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#sidemenu #menu-items .item .icon {
+    box-sizing: border-box;
+    padding: var(--padding);
+    width: var(--width-collapsed);
+}
+
+#sidemenu #menu-items .item .icon img {
+    width: 100%;
+}
+
+#sidemenu #menu-items .item .title {
+    padding: var(--padding) 0;
+}
+
+.menu-expanded {
+    width: var(--width);
+    box-shadow: 0 0 10px rgba (0, 0, 0, 0.5)
+}
+
+.menu-expanded #header #title {
+    display: inline-block;
+    width: calc(100% - 50px);
+    margin-right: -5px;
+    padding: var(--padding);
+}
+
+.menu-expanded #header #title span {
+    width: calc(var(--width) - var(--width-collapsed) - 5px);
+    overflow: hidden;
+    display: inline-block;
+}
+
+#menu-collapsed {
+    width: var(--width-collapsed);
+}
+
+.menu-collapsed #header #title {
+    width: 0;
+    height: 0;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-collapsed .item {
+    width: 100px;
+}
+
+.container {
+    margin-left: 330px;
+    margin-top: 40px;
+    width: auto;
+    height: 100%;
+    display: flex;
+}
+
+.container2 {
+    margin-left: 330px;
+    margin-top: 40px;
+    width: auto;
+    height: 100%;
+    display: flex;
+}
+
+.caja1 img {
+    width: 70px;
+    height: 70px;
+    display: inline;
+    padding: 30px;
+}
+
+.caja1 {
+    display: flex;
+    width: 800px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    margin-right: 40px;
+}
+
+.caja1 section h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-top: 35px;
+}
+
+.caja1 section p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.caja2 img {
+    width: 70px;
+    height: 70px;
+    display: inline;
+    padding: 30px;
+}
+
+.caja2 {
+    display: flex;
+    width: 800px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    margin-right: 40px;
+}
+
+.caja2 section h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-top: 35px;
+}
+
+.caja2 section p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.caja3 img {
+    width: 70px;
+    height: 70px;
+    display: inline;
+    padding: 30px;
+}
+
+.caja3 {
+    display: flex;
+    width: 600px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    margin-right: 40px;
+}
+
+.caja3 section h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-top: 35px;
+}
+
+.caja3 section p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+.caja4 img {
+    width: 70px;
+    height: 70px;
+    display: inline;
+    padding: 30px;
+}
+
+.caja4 {
+    display: flex;
+    width: 800px;
+    background-color: white;
+    border-radius: 20px;
+    padding: 15px;
+    margin-right: 40px;
+}
+
+.caja4 section h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    margin-top: 35px;
+}
+
+.caja4 section p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
