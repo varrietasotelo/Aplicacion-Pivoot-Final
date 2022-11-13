@@ -6,3 +6,6 @@ $password=$_POST['Contraseña']
 $password2=$_POST['Contraseña2']
 $tel=$_POST['Tel']
 $telf=$_POST['TelF']
+
+
+?>
