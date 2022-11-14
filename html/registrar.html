@@ -18,98 +18,147 @@
 
 
 <body>
+    <nav class="navbar navbar-expand-lg bg-light bg-opacity-50">
+        <div class="container-fluid">
+            <a class="navbar-brand ms-5" href="Index.html">
+                <img class="varr" src="../Imagenes/favicon.png" alt="Logo" width="300" height="70">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto mb-1 mb-lg-0">
+                    <li class="navbar-brand me-5">
+                        <a class="nav-link active" aria-current="page" href="#">Modulos</a>
+                    </li>
+                    <li class="navbar-brand me-5">
+                        <a class="nav-link active" href="#">Ventajas</a>
+                    </li>
+                    <li class="navbar-brand me-5">
+                        <a class="nav-link active" href="#">Contacto</a>
+                </ul>
 
-    <div class="padre">
-        <div class="hijo">
-            <img src="../Imagenes/registro.jpeg" alt="">
-            <div class="formulario">
-                <h1>Registrar Usuario</h1>
-                <div class="container">
-                    <form class="row g-3 needs-validation was-validated">
-                        <div class="col-6">
-                            <label for="NombreInput" class="form-label">Nombres</label>
-                            <input type="text" class="form-control" name="Nombres" id="NombreInput"
-                                placeholder="Escribe tu Nombre" required>
-                            <div class="valid-feedback">
-                                ¡buen Trabajo!
-                            </div>
+                <form class="d-flex">
+                    <a class="btn btn-dark me-2 btn-lg border rounded-pill" href="Inicio.html" role="button">Iniciar
+                        sesion</a>
+                    <a class="btn btn-dark me-2 btn-lg border rounded-pill" href="registrar.html"
+                        role="button">Registrarse</a>
+
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container-fluid">
+        <div class="content">
+            <div class="container m-5 ">
+                <div class="row">
+                    <div class="col-6 p-0 d-flex">
+                        <img class="ms-auto" src="../Imagenes/registro.jpeg" alt="Cancha Basquet" height="590vh"
+                            width="532vh">
+                    </div>
+                    <div class="background col-5 px-3 py-3">
+                        <h1>Registrar Usuario</h1>
+                        <div class="container">
+                            <form id="form" class="row g-3" action="../Registrar.php" method="post">
+                                <div class="col-6">
+                                    <label for="NombreInput" class="form-label">Nombres</label>
+                                    <input type="text" class="form-control" name="Nombres" id="NombreInput"
+                                        placeholder="Escribe tu Nombre" required>
+                                </div>
+
+                                <div class="col-6">
+                                    <label for="ApellidosInput" class="form-label">Apellidos</label>
+                                    <input type="text" class="form-control" name="Apellidos" id="ApellidosInput"
+                                        placeholder="Escribe tu Apellido" required>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="emailInput" class="form-label">Correo Electronico</label>
+                                    <div class="input-group has-validation">
+                                        <span class="input-group-text" id="emailInput">@</span>
+                                        <input type="email" class="form-control" name="Email" id="emailInput"
+                                            placeholder="Por favor digita tu correo" required>
+                                    </div>
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="inputPass" class="form-label">contraseña</label>
+                                    <div class="input-group">
+                                        <input type="password" class="form-control" name="Contraseña" id="inputPass"
+                                            placeholder="Por favor digita tu contraseña" required>
+                                        <button class="btn btn-outline-secondary" type="button"
+                                            id="addon"><img id="img" src="../Imagenes/visibilidad.png" alt="Ojo" width="20vh"></button>
+                                    </div>
+                                </div>
+
+                                <div class="col-6">
+                                    <label for="telInput" class="form-label">Telefono Celular</label>
+                                    <input type="text" class="form-control" name="Tel" id="telInput"
+                                        placeholder="Digita tu telefono celular" required>
+                                </div>
+
+                                <div class="col-6">
+                                    <label for="codigoInput" class="form-label">Telefono fijo</label>
+                                    <input type="text" class="form-control" name="Telf" id="codigoInput"
+                                        placeholder="Telefono fijo (Opcional)">
+                                </div>
+
+                                <div class="col-12">
+                                    <label for="select">Seleccione el rol al que pertenece</label>
+                                    <select class="form-select" id="select" name="Rol" required>
+                                        <option value="">Seleccione una opcion</option>
+                                        <option value="1">Docente</option>
+                                        <option value="2">Estudiante</option>
+                                        <option value="3">Administrador</option>
+                                    </select>
+                                </div>
+                                <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault"
+                                        required>
+                                    <label class="form-check-label" for="flexCheckDefault">
+                                        Acepto terminos y condiciones
+                                    </label>
+                                </div>
+
+                                <div class="d-grid gap-2 col-12">
+                                    <button id="boton" type="submit" class="btn btn-primary"> registrate</button>
+                                </div>
+                            </form>
                         </div>
 
-
-                        <div class="col-6">
-                            <label for="ApellidosInput" class="form-label">Apellidos</label>
-                            <input type="text" class="form-control" name="Apellidos" id="ApellidosInput"
-                                placeholder="Escribe tu Apellido" required>
-                        </div>
-
-                        <div class="col-12">
-                            <label for="emailInput" class="form-label">Correo Electronico</label>
-                            <div class="input-group has-validation">
-                                <span class="input-group-text" id="emailInput">@</span>
-                                <input type="email" class="form-control" name="Email" id="emailInput"
-                                    placeholder="Por favor digita tu correo" required>
-                            </div>
-                        </div>
-
-                        <div class="col-12">
-                            <label for="inputPass" class="form-label">contraseña</label>
-                            <input type="password" class="form-control" name="Contraseña" id="inputPass"
-                                placeholder="Por favor digita tu contraseña" required>
-                        </div>
-
-                        <div class="col-12">
-                            <label for="inputPass2" class="form-label"> Confirma tu contraseña</label>
-                            <input type="text" class="form-control" name="Contraseña2" id="inputPass2"
-                                placeholder="confirma tu contraseña" required>
-                        </div>
-
-                        <div class="col-6">
-                            <label for="telInput" class="form-label">Telefono Celular</label>
-                            <input type="text" class="form-control" name="Tel" id="telInput"
-                                placeholder="Digita tu telefono celular" required>
-                        </div>
-
-                        <div class="col-6">
-                            <label for="codigoInput" class="form-label">Telefono fijo</label>
-                            <input type="text" class="form-control" name="Telf" id="codigoInput"
-                                placeholder="Digita tu telefono fijo">
-                        </div>
-
-                        <div class="col-12">
-                            <label for="select">Seleccione el rol al que pertenece</label>
-                            <select class="form-select" id="select" name="Rol" required>
-                                <option value="">Seleccione una opcion</option>
-                                <option value="1">Docente</option>
-                                <option value="2">Estudiante</option>
-                                <option value="3">Administrador</option>
-
-                            </select>
-                        </div>
-
-
-
-                        <div class="col-12">
-                            <button type="submit" class="btn btn-primary" > registrate</button>
-                        </div>
-                        <script>
-                            function Validacion() {
-                                var Contraseña1 = document.getElementById('inputPass').value;
-                                var Contraseña2 = document.getElementById('inputPass2').value;
-                    
-                                if (Contraseña1 == Contraseña1) {
-                                    return false;
-                                    alert('Las contraseñas no coinciden')
-                                } else {
-                                    return true;
-                                }
-                            }
-                        </script>
-                    </form>
-
-                    </form>
-
+                    </div>
                 </div>
             </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        function validacion() {
+            document.getElementById("form").classList.add("was-validated");
+        }
+        document.getElementById("boton").onclick = function () {
+            validacion();
+        }
+
+        var eye = document.getElementById('addon');
+        var img = document.getElementById('img')
+        var input = document.getElementById('inputPass');
+        eye.addEventListener("click", function(){
+            if(input.type =="password"){
+                input.type = "text";
+                img.src = "../Imagenes/visible.png";
+            }else{
+                input.type ="password";
+                img.src = "../Imagenes/visibilidad.png";
+            }
+            })
+
+
+    </script>
 
 </body>
 
