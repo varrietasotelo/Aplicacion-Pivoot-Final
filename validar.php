@@ -4,8 +4,6 @@ $usuario=$_POST['Usuario'];
 $contraseña=$_POST['password'];
 
 
-
-
 $_SESSION['Usuario']=$usuario;
 
 $conectar=conn();
@@ -15,16 +13,13 @@ $resultado=mysqli_query($conectar,$consulta);
 $filas=mysqli_num_rows($resultado);
 
 if ($filas) {
-    header("location:Modulos.html");
+    header("location:html/dashboard.html");
 }else{
-    ?>
-    <?php
-    include("registrar.html");
-    ?>
-    <h1>Error<h1>
-    <?php
+    header("location:html/Inicio.html");
+
 }
+
 mysqli_free_result($resultado);
-mysqli_close($conexion);
+mysqli_close($conectar);
 
 ?>
