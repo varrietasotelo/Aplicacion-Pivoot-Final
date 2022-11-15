@@ -1,0 +1,28 @@
+body{
+background-image: url(../Imagenes/fondologin.svg);
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+.varr {
+    margin-left: 10vh;
+}
+
+.collapse {
+    margin-right: 10vh;
+}
+
+.content {
+    margin-top: 7vh;
+    margin-left: 9vh;
+}
+
+.background {
+    background-color: white;
+}
+
+.zi{
+z-index: 100;
+
+}
+
