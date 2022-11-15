@@ -1,0 +1,16 @@
+@media (max-width: 700px) {
+    .box h1{
+        font-size: small;
+
+    }
+    .box h3{
+        font-size: small;
+        
+    }
+    .home-section{
+        background: none;
+    }
+
+
+  }
+
