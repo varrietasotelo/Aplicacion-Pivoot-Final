@@ -5,60 +5,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categorias</title>
+    <title>Seguimientos</title>
     <link rel="stylesheet" href="../css/seguimiento.css">
-
-
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/0b49e90016.js" crossorigin="anonymous"></script>
 </head>
 
-
-
 <body>
-    <div class="padre">
-        <nav>
-            <ul>
-                <li>
-                    <img src="../Imagenes/menu.png" alt="">
-                    <h2>Pivoot</h2>
-                </li>
-
-            </ul>
-        </nav>
-    </div>
-
-    <div id="categoria">
-        <h1>Gestionar Categorias</h1>
-        
-    </div>
-
-
-    <div id="sidemenu" class="menu'collapsed">
-        <!--HEADER-->
-        <div id="header">
-            <div><img src="../Imagenes/favicon.png" alt=""></div>
-            <div id="menu-btn">
-                <div id="btn-hamburger"></div>
-                <div id="btn-hamburger"></div>
-                <div id="btn-hamburger"></div>
+        <nav class="navbar bg-light">
+            <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="../images/favicon.png" alt="logo">
+            </a>
             </div>
+        </nav>
+
+        <div class="container">
+        <br>
+        <h1 class="text-center">Seguimiento a Jugadores</h1>
+        <div class="col-12 ">
+            <table class="table table-striped m-5 ">
+                <thead>
+                <tr>
+                    <th scope="col">Id Usuario</th>
+                    <th scope="col">Nombre</th>
+                    <th scope="col">Apellido</th>
+                    <th scope="col">Correo Electronico</th>
+                    <th scope="col">Edad</th>
+                    <th scope="col">Categoria</th>
+                    <th scope="col">Asistencias</th>
+                    <th scope="col">Inasistencias</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>@mdo</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>Otto</td>
+                    <td>Otto</td>
+                    <td>
+                        <a href="" class = "btn btn-small btn-warning"><i class="fa-solid fa-pen-to-square"></i></a>
+                        <a href="" class = "btn btn-small btn-danger"><i class="fa-solid fa-trash"></i></a>
+                    </td>
+
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>Otto</td>
+                    <td>Otto</td>
+
+                    <td>
+                        <a href="" class = "btn btn-small btn-warning"><i class="fa-solid fa-pen-to-square"></i></a>
+                        <a href="" class = "btn btn-small btn-danger"><i class="fa-solid fa-trash"></i></a>
+                    </td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Jacob</td>
+                    <td>Thornton</td>
+                    <td>@fat</td>
+                    <td>Mark</td>
+                    <td>Otto</td>
+                    <td>Otto</td>
+                    <td>Otto</td>
+
+                    <td>
+                        <a href="" class = "btn btn-small btn-warning"><i class="fa-solid fa-pen-to-square"></i></a>
+                        <a href="" class = "btn btn-small btn-danger"><i class="fa-solid fa-trash"></i></a>
+                    </td>
+                </tr>
+
+                </tbody>
+            </table>
+
         </div>
-
-        <!--ITEMS-->
-
-
-
-    <script>
-        const btn = document.querySelector('#menu-btn')
-        const menu = document.querySelector('#sidemenu')
-        btn.addEventListener('click', e => {
-            menu.classList.toggle("menu-expanded");
-            menu.classList.toggle("menu-collapsed");
-
-            document.querySelector('body').classList.toggle('body-expanded');
-
-        })
-    </script>
-
+        </div>
+</div>
 </body>
 
 </html>

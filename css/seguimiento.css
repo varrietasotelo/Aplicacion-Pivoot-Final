@@ -1,92 +1,16 @@
 * {
     margin: 0;
-}
-
-:root {
-    --width: auto;
-    --padding: 10px;
-    --bgcolor: white;
-    --hovercolor: rgb(224, 221, 221);
-    --width-collapsed: 50px;
-}
-
-body {
-    background-color: whitesmoke;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
     padding: 0;
-    margin: 0;
-    margin-left: var(--width-collapsed);
 }
-
-.body-expanded {
-    margin-left: var(--width);
+.indice{
+    z-index: -2;
 }
-
-#main-container {
-    color: black;
+body{
+    background-image: url(../images/bg_hero_1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
 }
-
-#sidemenu {
-    background-color: var(--bgcolor);
-    color: black;
-    position: fixed;
-    height: 100%;
-    left: 0;
-    top: 0;
-}
-
-#sidemenu #header img {
-    width: auto;
-    height: 80px;
-    padding: 10px;
-}
-
-#sidemenu a {
-    color: black;
-    text-decoration: none;
-}
-
-
-/*
-
-HEADER
-
-*/
-
-.padre {
-    width: auto;
-    height: 100px;
-    margin-top: 0;
-    margin-left: 330px;
-    background-color: white;
-    border-bottom-right-radius: 30px;
-    border-bottom-left-radius: 30px;
-}
-
-div nav ul li img {
-    width: 30px;
-    height: 30px;
-    display: inline-block;
-    padding-top: 30px;
-}
-
-div nav ul li h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    display: inline-block;
-    padding-top: 30px;
-    padding-left: 10px;
-}
-
-div nav ul li {
-    list-style: none;
-    text-decoration: none;
-}
-
-
-
-#categoria {
-    margin-top: 50px;
-    margin-left: 45%;
+nav div a img{
+    width: 250px;
+    height: 70px;
 }
