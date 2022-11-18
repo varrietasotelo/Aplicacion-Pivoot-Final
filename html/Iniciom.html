@@ -1,6 +1,3 @@
-
-
-
 <!DOCTYPE html>
 <html lang="Es-es">
 
@@ -18,6 +15,8 @@
 </head>
 
 <body>
+
+
 
     <nav class="navbar navbar-expand-lg bg-light bg-opacity-50">
         <div class="container-fluid">
@@ -51,9 +50,15 @@
             </div>
         </div>
     </nav>
+                                    
+    <div class="alert alert-danger alert-dismissible fade show" role="alert">
+        <strong>Usuario o contraseña incorrecta</strong> usted a ingresado un usuario o
+        contraseña incorrecto
+        <button type="button" class="btn-close" data-bs-dismiss="alert"
+            aria-label="Close"></button>
+    </div>
 
-
-
+    
     <div class="container-fluid">
         <div class="content">
             <div class="container m-5 ">
@@ -75,7 +80,7 @@
                                 </div>
 
                                 <div class="col-12 mt-4">
-                                    <label for="ApellidosInput" class="form-label"><b>Contraseña</b></label>
+                                    <label for="password" class="form-label"><b>Contraseña</b></label>
                                     <input type="text" class="form-control form-control-lg" name="password"
                                         id="password" placeholder="Escribe tu Contraseña" required>
                                 </div>
@@ -91,7 +96,8 @@
                                 </div>
 
                                 <div class="d-grid gap-2 col-12 mt-4">
-                                    <button id="boton" type="submit" class="btn btn-warning border rounded-pill "><b>Ingresa</b>
+                                    <button id="boton" type="submit"
+                                        class="btn btn-warning border rounded-pill "><b>Ingresa</b>
                                     </button>
                                 </div>
 

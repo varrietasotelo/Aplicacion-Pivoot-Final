@@ -1,7 +1,9 @@
-body{
-background-image: url(../Imagenes/fondologin.svg);
-background-repeat: no-repeat;
-background-size: cover;
+body {
+
+    background-image: url(../Imagenes/bg_hero_1.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+
 }
 
 .varr {
@@ -20,4 +22,3 @@ background-size: cover;
 .background {
     background-color: white;
 }
-

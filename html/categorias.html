@@ -1,128 +1,191 @@
 <!DOCTYPE html>
-<html lang="en">
 
-<head>
+<html lang="en" dir="ltr">
+  <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Categorias</title>
+
+    <link rel="stylesheet" href="../css/dashboard.css">
     <link rel="stylesheet" href="../css/categorias.css">
-
-
-</head>
-
-
-
-<body>
-    <div class="padre">
-        <nav>
-            <ul>
-                <li>
-                    <img src="../Imagenes/menu.png" alt="">
-                    <h2>Pivoot</h2>
-                </li>
-
-            </ul>
-        </nav>
-    </div>
-
-    <div id="categoria">
-        <h1>Gestionar Categorias</h1>
         
+    <link rel="stylesheet" href="../css/control.css">
+    
+
+    <!--Boostrap Secciones-->
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+
+    <!-- Boxiocns Link -->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar close">
+    <div class="logo-details">
+      <i><img src="../Imagenes/LOGUITO.PNG" alt="" class="logo"></i>
+      <span class="logo_name">Pivoot</span>
+    </div>
+    <ul class="nav-links">
+      <li>
+        <a href="../html/Index.html">
+          <i class='bx bx-grid-alt'></i>
+          <span class="link_name">Inicio</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Inicio</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-collection'></i>
+            <span class="link_name">Perfil</span>
+          </a>
+          <i class='bx bxs-chevron-down arrow'></i>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Perfil</a></li>
+          <li><a href="#">Nombre y Apellido</a></li>
+          <li><a href="#">Docente</a></li>
+          <li><a href="#">Categoria</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="../html/estudiente.html">
+            <i class='bx bx-book-alt'></i>
+            <span class="link_name">Jugadores</span>
+          </a>
+          <ul class="sub-menu blank">
+            <li><a class="link_name" href="../html/estudiente.html">Jugadores</a></li>
+          </ul>
+        </div>
+      </li>
+      <li>
+        <a href="../html/acudiente.html">
+          <i class='bx bx-history'></i>
+          <span class="link_name">Acudientes</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="../html/acudiente.html">Acudientes</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="../html/docente.html">
+          <i class='bx bx-pie-chart-alt-2'></i>
+          <span class="link_name">Entrenador</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="../html/docente.html">Entrenador</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-line-chart'></i>
+          <span class="link_name">Categorias</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Categorias</a></li>
+        </ul>
+      </li>
+      <li>
+        <div class="iocn-link">
+          <a href="#">
+            <i class='bx bx-plug'></i>
+            <span class="link_name">Entrenamiento</span>
+          </a>
+        </div>
+        <ul class="sub-menu">
+          <li><a class="link_name" href="#">Entrenamiento</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="#">
+          <i class='bx bx-compass'></i>
+          <span class="link_name">Seguimiento</span>
+        </a>
+        <ul class="sub-menu blank">
+          <li><a class="link_name" href="#">Seguimiento</a></li>
+        </ul>
+      </li>
+
+
+      <li>
+        <div class="profile-details">
+          <div class="profile-content">
+
+          </div>
+          <div class="name-job">
+            <div class="profile_name">Nombre Usuarios</div>
+            <div class="job">Estado Usuario</div>
+          </div>
+          <a href="../html/Inicio.html"><i class='bx bx-log-out'></i></a>
+        </div>
+      </li>
+    </ul>
+  </div>
+  <section class="home-section">
+    <div class="home-content">
+      <i class='bx bx-menu' ></i>
+      <span class="text">Aplicacion Pivoot</span>
+    </div>
+    <div class="container text-center content-categorias">
+        <div class="cards">
+            <div class="card">
+                <div class="imagen">
+                    <img src="../Imagenes/Basketball-bro.svg" alt="" class="img-fluid">
+                </div>
+                <div class="box">
+                    <a href="../html/categoria pre mini.html">
+                        <h1>PRE MINI-MINI</h1><br>
+                        <p>Edades: 7 a 12</p><br>
+                        <h3>Ver</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imagen">
+                    <img src="../Imagenes/Basketball-bro.svg" alt="" class="img-fluid">
+                </div>
+                <div class="box">
+                    <a href="../html/categoria intantil.html">
+                        <h1>CATEGORIA INFANTIL</h1><br>
+                        <p>Edades: 13 a 14</p><br>
+                        <h3>Ver</h3>
+                    </a>
+                </div>
+            </div>
+            <div class="card">
+                <div class="imagen">
+                    <img src="../Imagenes/Basketball-bro.svg" alt="" class="img-fluid">
+                </div>
+                <div class="box">
+                    <a href="../html/categoria junior.html">
+                        <h1>CATEGORIA JUNIOR</h1><br>
+                        <p>Edades: 15 a 17</p><br>
+                        <h3>Ver</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
 
+    
 
-    <div id="sidemenu" class="menu'collapsed">
-        <!--HEADER-->
-        <div id="header">
-            <div><img src="../Imagenes/favicon.png" alt=""></div>
-            <div id="menu-btn">
-                <div id="btn-hamburger"></div>
-                <div id="btn-hamburger"></div>
-                <div id="btn-hamburger"></div>
-            </div>
-        </div>
-
-        <!--ITEMS-->
-
-        <div id="menu-items">
-            <div class="item">
-                <a href="">
-                    <div class="icon"><img src="../Imagenes/entrenador.png" alt=""></div>
-                    <div class="title">Inicio</div>
-                </a>
-            </div>
-        </div>
-
-        <div id="menu-items">
-            <div class="item">
-                <a href="">
-                    <div class="icon"> <img src="../Imagenes/entrenamiento.png" alt=""> </div>
-                    <div class="title">Jugadores</div>
-                </a>
-            </div>
-        </div>
-
-        <div id="menu-items">
-            <div class="item">
-                <a href="">
-                    <div class="icon"> <img src="../Imagenes/entrenamiento.png" alt=""> </div>
-                    <div class="title">Entrenador</div>
-                </a>
-            </div>
-        </div>
-        <div id="menu-items">
-            <div class="item">
-                <a href="">
-                    <div class="icon"> <img src="../Imagenes/mantenimiento.png" alt=""> </div>
-                    <div class="title">Categorias</div>
-                </a>
-            </div>
-        </div>
-
-        <div id="menu-items">
-            <div class="item">
-                <a href="">
-                    <div class="icon"> <img src="../Imagenes/entrenador.png" alt=""> </div>
-                    <div class="title">Entrenamiento</div>
-                </a>
-            </div>
-        </div>
-
-        <div id="menu-items">
-            <div class="item">
-                <a href="">
-                    <div class="icon"> <img src="../Imagenes/hamburger.png" alt=""> </div>
-                    <div class="title">Seguimientos</div>
-                </a>
-            </div>
-        </div>
-
-        <div id="menu-items">
-            <div class="item">
-                <a href="">
-                    <div class="icon"> <img src="../Imagenes/notas.png" alt=""> </div>
-                    <div class="title">Acudientes</div>
-                </a>
-            </div>
-        </div>
-
-
-    </div>
-
-
-    <script>
-        const btn = document.querySelector('#menu-btn')
-        const menu = document.querySelector('#sidemenu')
-        btn.addEventListener('click', e => {
-            menu.classList.toggle("menu-expanded");
-            menu.classList.toggle("menu-collapsed");
-
-            document.querySelector('body').classList.toggle('body-expanded');
-
-        })
-    </script>
-
+  </section>
+  <script>
+  let arrow = document.querySelectorAll(".arrow");
+  for (var i = 0; i < arrow.length; i++) {
+    arrow[i].addEventListener("click", (e)=>{
+   let arrowParent = e.target.parentElement.parentElement;//selecting main parent of arrow
+   arrowParent.classList.toggle("showMenu");
+    });
+  }
+  let sidebar = document.querySelector(".sidebar");
+  let sidebarBtn = document.querySelector(".bx-menu");
+  console.log(sidebarBtn);
+  sidebarBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("close");
+  });
+  </script>
 </body>
-
 </html>
