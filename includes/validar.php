@@ -1,3 +1,28 @@
+<?php
+include_once('db.php');
+
+    $x=$_POST['Usuario'];
+    $y=$_POST['password'];
+
+
+
+
+    $conectar = conn();
+    $consulta = "SELECT*FROM usuarios where email = '$x' and contrasena='$y'";
+    $resultado = mysqli_query($conectar, $consulta);
+
+
+    $filas = mysqli_num_rows($resultado);
+
+    if ($filas) {
+        header("location:../includes/dashboard.html");
+    }
+
+    mysqli_free_result($resultado);
+    mysqli_close($conectar);
+
+?>
+
 <!DOCTYPE html>
 <html lang="Es-es">
 
@@ -15,9 +40,6 @@
 </head>
 
 <body>
-
-
-
     <nav class="navbar navbar-expand-lg bg-light bg-opacity-50">
         <div class="container-fluid">
             <a class="navbar-brand ms-5" href="Index.html">
@@ -69,7 +91,7 @@
                     </div>
                     <div class="background col-5 px-3 py-5">
                         <div class="container mt-4">
-                            <form id="form" class="row g-3" action="../validar.php" method="post">
+                            <form id="form" class="row g-3" action="../includes/validar.php" method="post">
                                 <div class="col-12 mb-3">
                                     <h1 class>Iniciar sesion</h1>
                                 </div>
@@ -120,3 +142,4 @@
 </body>
 
 </html>
+

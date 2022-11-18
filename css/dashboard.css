@@ -229,9 +229,6 @@
   left: 260px;
   width: calc(100% - 260px);
   transition: all 0.5s ease;
-  background-image: url(../Imagenes/bg_hero_1.svg);
-  background-size:cover;
-  background-repeat: no-repeat;
 }
 .sidebar.close ~ .home-section{
   left: 78px;
