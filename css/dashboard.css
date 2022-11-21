@@ -229,6 +229,9 @@
   left: 260px;
   width: calc(100% - 260px);
   transition: all 0.5s ease;
+  background-image: url(../Imagenes/bg_hero_1.svg);
+  background-size:cover;
+  background-repeat: no-repeat;
 }
 .sidebar.close ~ .home-section{
   left: 78px;
@@ -311,7 +314,6 @@
 
 
 .content .content-2{
-  min-height: 60vh;
   display: flex;
   justify-content: space-around;
   align-items: flex-start;
@@ -319,9 +321,9 @@
 }
 .content .content-2 .recent-payments{
   min-height: 50vh;
+  margin-right: 3vh;
   flex: 5;
   background-color:rgb(255, 255, 255);
-  margin: 0 25px 25px 25px;
   border-radius: 15px;
   box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2), 0 6px 20px 0 rgb(0, 0, 0, 0.19);
 }

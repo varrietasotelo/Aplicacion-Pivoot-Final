@@ -1,3 +1,56 @@
+<?php
+error_reporting(0);
+include('db.php');
+include('token.php');
+include "class.phpmailer.php";
+include "class.smtp.php";
+
+$email = mysqli_real_escape_string($conectar, $_POST['email']);
+$sql = "SELECT id FROM usuarios WHERE email = '$email'";
+$resultado = $conectar->query($sql);
+$filas = $resultado->num_rows;
+
+if ($filas > 0) {
+    $password = tokenG();
+    $token = sha1($password);
+    $sql = "SELECT id, nombres, email FROM usuarios WHERE email = '$email'";
+    $resultado = $conectar->query($sql);
+    $row = $resultado->fetch_assoc();
+    $destinatario = utf8_decode($row['email']);
+    $asunto = "Recuperacion de contraseña Pivoot";
+    $mensaje.= "¡Hola " . utf8_decode($row['nombres']) . "! ¿Mala memoria?  Has solicitado restabecer tu contraseña. no te preocupes nos pasa. Genera un nuevo token y no olvides asignar una nueva contraseña aqui:  http://localhost/Pivoot/includes/actualizar.php?email=".$email."&token=".$token."&password=".$password;
+    $email_user = 'pivoot.school@gmail.com';
+    $email_pass = 'hnrnnljxmerptgry';
+    $from_name = 'Escuela de baloncesto pivoot';
+    $phpmailer = new PHPMailer();
+    $phpmailer->Username =  $email_user;
+    $phpmailer->Password = $email_pass;
+    $phpmailer->SMTPSecure = 'ssl';
+    $phpmailer->Host = 'smtp.gmail.com';
+    $phpmailer->Port = 465;
+    $phpmailer->isSMTP();
+    $phpmailer->SMTPAuth = true;
+    $phpmailer->setFrom($phpmailer->Username, $from_name);
+    $phpmailer->AddAddress($destinatario);
+    $phpmailer->FromName = 'Pivoot';
+    $phpmailer->Subject = $asunto;
+    $phpmailer->Body .= $mensaje;
+    $phpmailer->IsHTML(true);
+    if (!$phpmailer->Send()) {
+        $var = "No se ha podido enviar la verificacion intente nuevamente"; 
+    } else {
+        $var = "Se ha enviado una verificacion a su correo por favor revise su bandeja"; 
+    }
+} else {
+    if ($filas == 0) {
+        $var = "Su correo no se encuentra en la bases de datos por favor rectifiquelo y vuelva a escribirlo";
+    } else {
+        $var = "Error en el sistema por favor vuelvalo a intentar";
+        
+    }
+}
+
+?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -43,7 +96,7 @@
                     <a class="btn btn-dark me-2 btn-lg border rounded-pill" href="Inicio.html" role="button">Iniciar
                         sesion</a>
                     <a class="btn btn-dark me-2 btn-lg border rounded-pill" href="registrar.html"
-                        role="button">Registrarse</a>
+                        role="button">Registrars</a>
 
                 </form>
             </div>
@@ -55,12 +108,10 @@
         <div class="container ms-5 p-5 d-flex">
             <div class="row mx-auto">
                 <div class="varr mx-auto">
-                    <h1>Recupera tu contraseña</h1>
-                    <form class="mt-4" action="../includes/recuperar.php" method="post">
+                    <h3><?php echo $var ?></h3>
+                    <form class="mt-4" action="../html/Index">
                         <div class="col-12 mb-3">
-                            <input name="email" type="email" class="form-control" placeholder="Digita tu correo registrado">
-                        </div>
-                        <button type="submit" class="btn btn-primary col-12">Recuperar</button>
+                        <button type="submit" class="btn btn-primary col-12">Aceptar</button>
                     </form>
                 </div>
             </div>
